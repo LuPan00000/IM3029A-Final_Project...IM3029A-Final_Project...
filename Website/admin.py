@@ -3,7 +3,7 @@
 from django.contrib import admin
 from .models import MenuItem, Order, OrderItem  # 把你的 model 匯入
 
-# 菜單餐點
+# 菜單餐點###
 @admin.register(MenuItem)
 class MenuItemAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'category', 'price', 'sold_out', 'member_only')  # 加入 member_only
